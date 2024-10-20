@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>G.MATA / Escultura</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap')  
+    * {
+      
+      box-sizing: border-box;
+    }
+
+     a:visited {
+            color: black;
+        }    
+      
+    body {
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1 {
+    
+    height: 10%;
+        margin-right: 5%;
+    font-size: 5vw;
+   text-transform: uppercase;
+    text-align: right;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    color: black;
+    position: absolute;
+    top: 3.5%;
+    right: 3.5%;
+     z-index: 2;
+            
+}        
+
+        h1 a {
+            text-decoration: none     
+        }        
+    
+      .intro {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;     
+    font-size: 2.25vw;
+    margin: 5% auto; /* Default margin on both mobile and desktop */
+    width: 100%;
+    text-align: justify;
+    }  
+   
+      
+    .gallery-container {
+    margin-top: 15vw;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-flow: column;    
+    width: 90%;
+    column-gap: 5vw;
+    grid-row-gap: 5vw;
+    overflow: hidden;
+    position: relative;
+    }
+
+    .gallery-wrapper {
+      
+        padding-bottom: 20%;
+        display: flex;
+    flex-direction: row;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scrollbar-width: none; /* Firefox */
+      -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    }
+
+    .gallery-wrapper::-webkit-scrollbar {
+      display: none; /* Hide scrollbar in Webkit-based browsers */
+    }
+      
+.gallery-wrapper h2 {
+    padding-top: 10%;
+    font-size: 3vw;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    color: black;
+    margin-top: -5%;
+    position: absolute;
+    z-index: 2;
+
+    }
+      
+.gallery-wrapper p {
+    font-size: 2.25vw;
+    width: 100%;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: black;
+    z-index: 2;
+    column-count: 2;
+    padding-left: 2%;
+    position:absolute;
+    }      
+
+      .gallery-wrapper figcaption {
+    font-size: 1.5vw;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: black;
+    position: relative;
+    z-index: 2;
+
+    }
+      
+      
+    .gallery {
+    margin-top: 15vw;
+      display: flex;
+    }
+
+    .gallery img {
+      height: 700px;
+        opacity: 30%;
+      object-fit:scale-down;
+        object-position: top;
+    }
+
+    .gallery img:last-child {
+      margin-right: 0;
+    }
+      ul {
+    
+    z-index: 2;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    left: 2.5%;
+    overflow: hidden;
+    position: fixed;
+    bottom: 1.75%;
+    width: 95%;
+    background-color: chartreuse;
+	
+
+}
+
+li {
+  float: left;
+}
+
+li a {
+    text-transform: capitalize;
+    font-family: 'Inter', sans-serif;
+    font-size: 3.5vw;
+font-weight: 600;
+    display: block;
+    color: black;
+    padding: 1vw 1vw;
+    text-align: center;
+    text-decoration: underline;
+	text-decoration-thickness: .8vw;
+	text-decoration-color: black;
+}
+
+  /* Desktop-specific styles */
+      
+      
+     
+        
+@media (min-width: 768px) {
+
+    h1 {
+    font-size: 2.5vw;    
+      }
+    
+    li a {
+    font-size: 1.5vw; 
+    text-decoration-thickness: .35vw;  
+    padding: .5vw 1vw;  
+      }
+    
+    .intro {   
+    font-size: 2vw;
+     }
+    
+    h2 p {
+    font-size: 2vw;
+     }
+        
+    .gallery-wrapper figcaption {
+        font-size: 1vw;
+    }
+    
+        .gallery img {
+      width: 1600px;
+    height: 2000px;
+      object-fit: scale-down;
+      margin-right: 10px;
+      scroll-snap-align: start;
+    }
+
+    .cover {
+      width: 800px;
+      height: 800px;
+    }
+
+    .gallery img:last-child {
+      margin-right: 0;
+    }
+    
+    .gallery {
+        overflow-x: hidden;
+    }
+    
+      }
+        
+  </style>
+</head>
+<body>
+    <h1><a href="index.html">G<span style="color:red">.</span>Mata</a></h1>
+  <div class="gallery-container">
+
+    <div class="gallery-wrapper">
+        <h2>Gilberto Mata - Escultor<br>info@g-mata.com / +52 555 404 9159</h2>
+
+        <div class="gallery">  
+        <p>La obra de Gilberto Mata forma parte de colecciones privadas y públicas en México y Norte América.<br><br>
+EXPOSICIONES <br><br>
+            
+<span style="font-style: italic">Piedras permeables</span><br>Galería Pacífico<br>Puerto Vallarta, Jalisco<br>1989<br><br>
+<span style="font-style: italic">Reflejos</span><br>Prado Norte Galería<br>CDMX<br>1992<br><br>
+<span style="font-style: italic">Árboles, agua y agua subterránea</span><br>Diego de Osorio Galería<br>CDMX<br>2009-2010<br><br>
+<span style="font-style: italic">Lluvia y árboles</span><br>Centro Cultural<br>León, Guanajuato<br>1999<br><br>
+<span style="font-style: italic">Lluvia, grietas, agua subterránea (propuesta tridimensional)</span><br>Tlapechico<br>CDMX<br>2019<br><br>
+<span style="font-style: italic">Lluvia y grietas</span><br>Galería Del Viento<br>San José del Cabo, BCS<br>2022<br><br>
+<span style="font-style: italic">Lluvia, grietas en tensión, acuíferos</span><br>Taller en Estragón<br>CDMX<br>2023<br><br>            
+            
+<br><br><br><br> <br><br>  EDUCACIÓN<br><br>        
+Arquitectura<br>Universidad de Guanajuato<br>ITESO Guadalajara Jalisco<br>1967-1969
+<br><br>Artes Visuales<br>
+ENAP UNAM 1972-1976
+<br><br><br> 
+DESEMPEÑO PROFESIONAL<br><br>            
+Jefe de Diseño ENAP-UNAM<br>Estudios Superiores<br>1976-1978<br><br>
+SCT<br>Dirección de investigación y Desarollo<br>1978-1980<br><br>
+Productora Nacional de Radio y Televisión -PRONARTE-<br>1978-1981<br><br>
+Colegio de Bachilleres<br>
+1981-1985<br><br>
+Promotor de Arte y Galerista<br>1986 - a la fecha<br><br><br><br><br><br><br><br><br><br>
+</p>
+<div>        
+    <img src="images/bio/gmata.jpg" alt="GMata">
+    </div>
+</div>
+</div>
+</div>           
+           
+<ul>
+  <li><a href="obra.html">Obra</a></li>
+  <li><a href="bio.html">Contacto / Bio</a></li>
+
+</ul>
+  <script>
+    document.addEventListener('keydown', function(event) {
+      const galleryWrapper = document.querySelector('.gallery-wrapper');
+      if (event.key === 'ArrowRight') {
+        galleryWrapper.scrollBy({ left: 600, behavior: 'smooth' });
+      }
+      if (event.key === 'ArrowLeft') {
+        galleryWrapper.scrollBy({ left: -600, behavior: 'smooth' });
+      }
+    });
+  </script>
+</body>
+</html>
